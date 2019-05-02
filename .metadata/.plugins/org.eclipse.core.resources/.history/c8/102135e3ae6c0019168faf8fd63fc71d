@@ -1,0 +1,32 @@
+package com.leetcode.methold;
+
+import java.util.ArrayList;
+
+public class Reverse {
+
+	public int reverse(int x) {
+		/*
+		 * x分2类：1.正常    2.负数 
+		 */
+		ArrayList<Integer> nums = new ArrayList<>();
+		int tmp,n;
+		int res = 0;
+		tmp = Math.abs(x);
+		
+		while(tmp > 9){ //注意退出条件
+			n = tmp % 10; //余数
+			tmp /= 10;
+			nums.add(n);
+		}
+		nums.add(tmp);
+		for(int i = 0; i < nums.size(); i++){
+			res += nums.get(i)*Math.pow(10, nums.size() - 1 - i);
+		}
+		
+		if (x < 0) {
+			return res*(-1);
+		}
+		return res;
+	}
+
+}

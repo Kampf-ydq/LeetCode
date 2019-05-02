@@ -1,0 +1,28 @@
+package com.leetcode.test;
+
+import static org.junit.Assert.assertArrayEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.leetcode.methold.Solution;
+
+public class TesttwoSum {
+
+	int[] nums;
+	int target;
+	Solution s;
+	
+	@Before
+	public void init(){
+		nums = new int[]{2,7,11,15};
+		target = 9;
+		s = new Solution();
+	}
+	@Test
+	public void testtwoSum(){
+		int[] Ares = {0,1};
+		int[] Mres = s.twoSum(nums, target);
+		assertArrayEquals(Mres, Ares);
+	}
+}

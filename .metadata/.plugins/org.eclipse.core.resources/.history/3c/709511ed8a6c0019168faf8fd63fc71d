@@ -1,0 +1,21 @@
+package com.leetcode.test;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestReverse {
+
+	String case1,case2,case3;
+	
+	@Before
+	public void init(){
+		case1 = "3";  //3
+		case2 = "120";  // 21
+		case3 = "-54"; //-45
+	}
+	
+	@Test
+	public void testReverse(){
+		
+	}
+}

@@ -1,0 +1,19 @@
+package com.leetcode.methold;
+
+public class Solution {
+
+	 public int[] twoSum(int[] nums, int target) {
+		    int i,j;
+		    int[] solution = {0,0};
+	        for (i = 0; i < nums.length; i++) {
+	        	for (j = 0; j < nums.length; j++) {
+					if (nums[i] + nums[j] == target) {
+						solution[0] = i;
+						solution[1] = j;
+						return solution;
+					}
+				}
+			}
+	        return solution;
+	    }
+}

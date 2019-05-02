@@ -1,0 +1,18 @@
+package com.leetcode.methold;
+
+import java.util.ArrayList;
+
+public class Reverse {
+
+	public int reverse(int x) {
+		/*
+		 * x分3类：1.正常    2.负数    3.以0结尾
+		 */
+		ArrayList nums = new ArrayList<>();
+		if (x >= 0 && x%10 != 0) {
+			
+		}
+		return 0;
+	}
+
+}

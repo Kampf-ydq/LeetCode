@@ -1,0 +1,10 @@
+package com.leetcode.methold;
+
+public class Reverse {
+
+	public int reverse(int x) {
+		
+		return 0;
+	}
+
+}
